@@ -1,0 +1,71 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+body {
+    background: #B22222 url(../images/background1.jpg) 100% no-repeat;
+	background-size: cover;
+    background-attachment: fixed;
+}
+
+.eggs2{color:#990000;}
+.copy{background-color:#fff}
+.audio{z-index: 999999;}
+.eggs:hover{z-index: 999999;}
+.text{color: white; font-size:40px; align:top; font-family:Arial;}
+.main{
+	border-radius: 30px;
+	background-image: url(../images/background2.jpg); 
+	padding: 10px; 
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 10%;
+	width: 70% 0;
+}
+
+h1 {
+    font-size: 6.5vw;
+    padding-top: 3%;
+    font-family: 'Mountains of Christmas', cursive;    
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    font-weight: 900;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+	z-index: 999999;
+    -webkit-background-clip: text;
+    background: #fff;	
+}
+.Gold-Glitter {
+    color: gold;
+    background: -webkit-linear-gradient(transparent, transparent), url(../images/gold_glitter.gif) repeat;
+}
+#Snow {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+   z-index: -999999;	
+}
+.snow, .snow:before, #snow {
+    backgroundz-index: 1;
+    z-index: 200;
+    background-image: url('../images/flake1.png'), url('../images/flake2.png'), url('../images/flake3.png');
+    height: 200%;
+	background-attachment: fixed;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 200%; 	
+	z-index: -999999;
+    animation: snow 40s linear infinite;
+}
+@keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% { background-position: 500px 500px, 100px 200px, -100px 150px}
+    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
